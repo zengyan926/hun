@@ -1,0 +1,370 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: '微软雅黑';
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+  	min-width: 580px;
+  	margin: 0;
+  	padding: 0;
+}
+input,
+button,
+{
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  /*color: #37b0e9;*/
+  color: #63c3eb;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #37b0e9;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/*login*/
+.login-bg{
+	height: 100%;
+	width: 100%;
+	background: url(../images/login-bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.login-bg .box-outer{
+		width: 560px;
+		height: 304px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+}
+.box-outer .layer-box{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		opacity:0.3;
+		border-radius: 5px;
+}
+.ct-box{
+	padding-top: 30px;
+	text-align: center;
+}
+.login-icon{
+	background: url(../images/login-icon.png) no-repeat;
+}
+.login-title{
+	width: 220px;
+	height: 45px;
+	margin: auto;
+	background-position: 0 -6px;
+}
+.input-box{
+	width:500px;
+	background: #fff;
+	border-radius: 5px;
+	margin: 35px auto 0;
+	position: relative;
+}
+.input-box div{
+	height: 62px;
+	width: 100%;
+}
+.input-box label{
+	width: 85px;
+	display: inline-block;
+	text-align: center;
+	line-height: 62px;
+	font-size: 20px;
+	color: #010101;
+	font-weight: bold;
+}
+.input-box input{
+	width: 350px;
+	height: 30px;
+	color: #010101;
+	border: 0;
+	outline: none;
+	font-size: 20px;
+}
+.error{
+	position: absolute;
+	bottom: -23px;
+	color: #ff6138;
+	left: 14px;
+	margin: 0;
+	padding-left: 22px;
+	background-position: -8px -54px;
+}
+.login-clear{
+	width: 40px;
+	height: 40px;
+	background-position: -178px -79px;
+	display: inline-block;
+	position: relative;
+  top: 12px;
+  left: 5px;
+  cursor: pointer;
+}
+.login-go{
+	width: 40px;
+	height: 40px;
+	background-position: -6px -82px;
+	display: inline-block;
+	position: relative;
+  top: 12px;
+  left: 5px;
+  cursor: pointer;
+}
+.login-go[disabled]{
+	opacity: .5;
+	cursor: not-allowed;
+}
+.tip-box{
+	color: #fefefe;
+	font-size: 22px;
+	position: relative;
+	top: 20px;
+}
+.tip-box div{
+	float: left;
+	width: 50%;
+	padding: 0 30px;
+}
+.tip-box div:last-child{
+	text-align: right;
+}
+.tip-box span{
+	cursor: pointer;
+}
+.tip-box i{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	position: relative;
+	top: 1px;
+	margin: 0 10px;
+}
+.tip-box i.active{
+	border:0;
+	background-position: -8px -130px;
+}
+.box-btm{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	color: #fff;
+	font-size: 14px;
+}
+.btm-layer{
+		width: 100%;
+		height: 100%;
+		background: #000;
+	opacity: .61;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.btm-ct-box{
+	position:relative;
+}
+.btm-ct-box span{
+	margin: 0 15px 0 30px;
+	position: relative;
+	top: -7px;
+}
+.btm-ct-box a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-position: -141px -81px;
+}
+.display-none{
+	display:none;
+}
+/*重置密码*/
+.ct-box h2{
+	font-size:30px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 15px;
+}
+.input-box2{
+	height: 62px;
+}
+.input-box2 label{
+	width: 140px;
+}
+.input-box2 div:nth-child(1){
+	border-bottom: 0;
+}
+.input-box2 input{
+	width: 300px;
+}
+.close-login{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	display: inline-block;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-position: -81px -86px;
+}
+.ct-box button{
+	width: 116px;
+	height: 40px;
+	text-align: center;
+	line-height: 35px;
+	border: 1px solid #fff;
+	float: right;
+	margin-right: 30px;
+	position: relative;
+	top: 30px;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.out-alert{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.layer-box{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	left: 0;
+	top: 0;
+	background: #fff;
+	opacity: .16;
+}
+.out-alert .layer-box{
+	background: #000;
+	opacity: .85;
+}
+.in-alert{
+	width: 558px;
+	height: 230px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.in-alert .layer-box{
+	opacity: .41;
+	background: #fff;
+	border-radius: 5px;
+}
+.alert-ct{
+	/*height: 336px;*/
+	width: 100%;
+}
+.alert-close{
+	width: 30px;
+	height: 30px;
+	background-position: -81px -86px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+}
+.alert-ct{
+	padding-top: 30px;
+	width: 100%;
+}
+.alert-ct h2{
+	font-size:30px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0;
+}
+.alert-ct button{
+	width: 160px;
+	height: 40px;
+	text-align: center;
+	line-height: 35px;
+	border: 2px solid #fff;
+	float: right;
+	position: relative;
+	margin: 60px 0 30px 15px ;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.text-right{
+	text-align: right;
+	padding-right: 30px;
+}
+.text-right p{
+	float: left;
+	font-size: 18px;
+	color: #fefefe;
+	padding-left: 35px;
+	padding-top: 15px;
+}
+.text-right i{
+	width: 30px;
+	height: 25px;
+	background-position: -15px -145px;
+	position: relative;
+	top: 5px;
+	margin-right: 10px;
+}
+.alert-ct3 .text-right p{
+	margin:0 0 60px;
+}
+
+button[disabled]{
+	opacity: .5;
+	cursor: not-allowed;
+}
+#tijiao{
+	vertical-align:middle;
+	margin: 40px;
+    width: 80px;
+    height: 30px;
+    font-weight:900;
+}

@@ -1,0 +1,87 @@
+ .yemian1{
+ 	float:left;
+ 	display:inline-block;
+    width: 720px;
+    height:900px;
+    background: #f1f1f1;
+    margin-left:100px;
+    word-break: break-all;
+    word-wrap: break-word;
+    border:5px -black;
+}
+ .yemian2{
+ 	float:left;
+    width: 720px;
+    height:900px;
+    background: #f1f1f1;
+    margin-left:100px;
+    word-break: break-all;
+    word-wrap: break-word;
+    border:5px -black;
+}
+	.header{
+	width: 720px;
+    height: 80px;
+    background-color: white;
+    font-size:30px;
+    text-align:center;
+	}
+	.input{
+	width: 720px;
+    height: 740px;
+    overflow-y:scroll;
+	}
+	.time{
+	 text-align:center;
+	 font-size:15px;
+	 color: #999;
+	}
+	.name{
+	margin-left:10px;
+	font-size:25px;
+	}
+	.message{
+	text-align:center;
+	margin-left:10px;
+	font-size:20px;
+	background-color: white;
+	}
+	.footer{
+	width: 720px;
+    height: 80px;
+    background-color: white;
+    border-bottom:solid red 1px;
+	}
+	.footer>img{    
+	margin-top:15px;
+	margin-left:50px;
+	vertical-align:middle;
+	}
+	.footer>input{
+	display:inline-block;
+	height:55px;
+    width: 350px;
+    margin:auto;
+    margin-top:10px;
+    margin-left:60px;
+    border:solid 1px black;
+    vertical-align:middle;
+    
+	}
+	.footer>button{
+	display:inline-block;
+	margin-left:30px;
+	margin-top:10px;
+	padding:10px;
+	font-size:30px;
+	background-color: green;
+    border-color: #357ebd;
+    color: #fff;
+	border-radius:12px;
+	vertical-align:middle;
+	}
+	.ts{
+	text-align:center;
+	 font-size:15px;
+	 color: #999;
+	}

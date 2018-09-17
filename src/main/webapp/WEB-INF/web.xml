@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Chat</display-name>
+  <servlet>
+  	<servlet-name>checkServlet</servlet-name>
+  	<servlet-class>web.CheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>checkServlet</servlet-name>
+  	<url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>indexServlet</servlet-name>
+  	<servlet-class>web.IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>indexServlet</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>webServlet</servlet-name>
+  	<servlet-class>web.WebServletTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>webServlet</servlet-name>
+  	<url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>webServlet2</servlet-name>
+  	<servlet-class>web.WebServletTest2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>webServlet2</servlet-name>
+  	<url-pattern>/test2</url-pattern>
+  </servlet-mapping>
+</web-app>

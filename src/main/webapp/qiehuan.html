@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script language =javascript >
+var curIndex=0;
+//时间间隔(单位毫秒)，每60秒钟显示一张，数组共有5张图片。
+
+var timeInterval=60000;
+var arr=new Array();
+arr[0]="1.jpg";
+arr[1]="2.jpg";
+arr[2]="3.jpg";
+arr[3]="4.jpg";
+arr[4]="5.jpg";
+setInterval(changeImg,timeInterval);
+function changeImg()
+{
+    var obj=document.getElementById("obj");
+    if (curIndex==arr.length-1) 
+    {
+        curIndex=0;
+    }
+    else
+    {
+        curIndex+=1;
+    }
+    obj.src=arr[curIndex];
+}
+</script>
+<img id=obj src ="WebContent/1.jpg" width=500 height=550 border =0 >
+</body>
+</html>

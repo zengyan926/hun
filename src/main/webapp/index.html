@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960,maximum-scale=3.0,user-scalable=yes">
+<title>匿名聊天室</title>
+<link rel="stylesheet" href="css/login.css">
+</head>
+
+
+<body style="height: 100%;min-height: 580px;">
+<div class="login-bg">
+<div class="box-outer">
+<div class="layer-box"></div>
+<div class="ct-box J_loginBox" margin:20px;>
+<form method="post" action="CheckServlet" onsubmit="return check()">
+<div class="login-icons login-titles"></div>
+<div class="input-box J_loginForm">
+<div>
+<label>昵称：</label>
+<input type="text" name="nickName" id="nickName" _dcVal="user_name" validated="require" msg="昵称"/>
+<i class="login-icon login-clear J_clearInput"></i>
+</div>
+<p class="error login-icon" _dcError></p>
+</div>
+<button type="submit" id="tijiao" >提交</button>
+</form>
+</div>
+
+</div>
+
+</div>
+
+<script src="js/jquery-1.4.2.js"></script>
+<script>
+	function check(){
+	    if($('#nickName').val()==''){
+	        alert('名字不能为空');
+	        return false
+	    }else{
+	    	alert($('#nickName').val());
+	        return true;
+	    }
+	}
+</script>
+</body>
+</html>
